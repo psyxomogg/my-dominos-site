@@ -1,0 +1,147 @@
+/* Общие стили для страницы пиццы */
+/* Контейнер для всех пицц */
+.pizza-menu {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Грид для расположения карточек */
+.pizza-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Карточка пиццы */
+.pizza-item {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    position: relative;
+}
+
+.pizza-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Картинка пиццы */
+.pizza-item img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pizza-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Название пиццы */
+.pizza-item h3 {
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Описание пиццы */
+.pizza-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Блок выбора размера */
+.size-options {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.size-btn {
+    border: 1px solid #ccc;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.size-btn:hover,
+.size-btn.active {
+    background: #D30000;
+    color: white;
+    border-color: #D30000;
+}
+
+/* Цена */
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #D30000;
+    margin: 10px 0;
+}
+
+/* Кнопка в корзину */
+.add-to-cart {
+    background: #D30000;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.add-to-cart:hover {
+    background: #B00000;
+    transform: scale(1.05);
+}
+
+/* Адаптивность */
+@media screen and (max-width: 1024px) {
+    .pizza-list {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pizza-list {
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+    }
+
+    .pizza-item {
+        width: 100%;
+    }
+
+    .pizza-menu h1 {
+        font-size: 24px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .pizza-menu {
+        padding: 10px;
+    }
+
+    .pizza-item {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .add-to-cart {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
