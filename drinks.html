@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="/css/drinks.css"> 
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>Domino’s</title>
+</head>
+<body>
+    <header class="header">
+    <div class="header-top">
+        <div class="contact-info">
+            <span>📞 0487021111</span>
+            <span>📍 Одеса</span>
+        </div>
+        <nav class="nav-menu">
+            <a href="news.html">НОВИНИ</a>
+            <a href="pizza-tracker.html">PIZZA TRACKER</a>
+            <a href="feedback.html">ЗАЛИШИТИ ВІДГУК</a>
+        </nav>
+        <div class="user-options">
+            <a href="modal.html" class="login-btn">Увійти</a>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <img src="images/blue-logo.avif" alt="Domino's Logo" class="logo">
+        <nav class="main-menu">
+            <a href="promo.html">Акції</a>
+            <a href="pizza.html">Піца</a>
+            <a href="drinks.html" class="active">Напої</a>
+            <a href="sides.html">Сайди</a>
+            <a href="desserts.html">Десерти</a>
+        </nav>
+        <button class="order-btn">Замовити</button>
+    </div>
+</header>
+
+<main class="drinks-container">
+    <h1>Напої</h1>
+    <div class="drink-filters">
+        <button class="filter-btn" data-category="all">Всі</button>
+        <button class="filter-btn" data-category="water">Вода</button>
+        <button class="filter-btn" data-category="juice">Сік</button>
+        <button class="filter-btn" data-category="tea">Кава та чай</button>
+    </div>
+    <div class="drinks-grid">
+        <div class="drink-card">
+            <img src="images/water.jpg" alt="Мінеральна вода">
+            <h2>Мінеральна вода</h2>
+            <p>Охолоджена, природна вода, без газу</p>
+            <p class="price">30 грн</p>
+        </div>
+        <div class="drink-card">
+            <img src="images/juice.jpg" alt="Апельсиновий сік">
+            <h2>Апельсиновий сік</h2>
+            <p>Свіжий 100% натуральний сік без додавання цукру</p>
+            <p class="price">50 грн</p>
+        </div>
+        <div class="drink-card">
+            <img src="images/tea.jpg" alt="Зелений чай">
+            <h2>Зелений чай</h2>
+            <p>Ароматний зелений чай з натуральним смаком</p>
+            <p class="price">40 грн</p>
+        </div>
+    </div>
+</main>
+    <script src="js/drinks.js"></script> 
+</body>
+</html>
+

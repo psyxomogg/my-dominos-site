@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="/css/sides.css"> 
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>Сайди - Domino's</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="contact-info">
+                <span>📞 0487021111</span>
+                <span>📍 Одеса</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="news.html">НОВИНИ</a>
+                <a href="pizza-tracker.html">PIZZA TRACKER</a>
+                <a href="feedback.html">ЗАЛИШИТИ ВІДГУК</a> 
+            </nav>
+            <div class="user-options">
+                <a href="modal.html" class="login-btn">Увійти</a> 
+            </div>
+        </div>
+        <div class="header-bottom">
+            <img src="images/blue-logo.avif" alt="Domino's Logo" class="logo">
+            <nav class="main-menu">
+                <a href="promo.html">Акції</a>
+                <a href="pizza.html">Піца</a>
+                <a href="drinks.html">Напої</a>
+                <a href="sides.html">Сайди</a>
+                <a href="desserts.html">Десерти</a>
+            </nav>
+            <button class="order-btn">Замовити</button>   
+        </div> 
+    </header> 
+
+
+
+
+
+
+    <main class="sides-container">
+        <h1 class="sides-title">Сайди</h1>
+        <div class="filters">
+            <div class="categories">
+                <button class="filter-btn active" data-category="all">Всі</button>
+                <button class="filter-btn" data-category="курка">Курка та ребра</button>
+                <button class="filter-btn" data-category="бурито">Буріто</button>
+                <button class="filter-btn" data-category="мини-роли">Міні-роли</button>
+                <button class="filter-btn" data-category="соусы">Соуси</button>
+            </div>
+    
+            <div class="sort">
+                <label for="sort">Сортувати:</label>
+                <select id="sort">
+                    <option value="default">За замовчуванням</option>
+                    <option value="price-asc">Ціна: від дешевих</option>
+                    <option value="price-desc">Ціна: від дорогих</option>
+                </select>
+            </div>
+        </div>
+        <div class="sides-grid"> 
+            <div class="sides-card">
+                <img src="images/chicken-teriyaki-website-main.avif" alt="Курячі крильця">
+                <h2>Курячі крильця</h2>
+                <p>Соковиті курячі крильця з пікантним соусом.</p>
+                <p class="price">208.00 грн</p>
+                <button class="add-to-cart">В кошик</button>
+            </div>
+    
+            <div class="sides-card">
+                <img src="images/placeholder.png" alt="Ребра BBQ">
+                <h2>Ребра BBQ</h2>
+                <p>Апетитні свинячі реберця в соусі BBQ.</p>
+                <p class="price">220.00 грн</p>
+                <button class="add-to-cart">В кошик</button>
+            </div>
+    
+            <div class="sides-card">
+                <img src="images/placeholder.png" alt="Картопля Фрі">
+                <h2>Картопля Фрі</h2>
+                <p>Хрустка картопля фрі з ароматними спеціями.</p>
+                <p class="price">99.00 грн</p>
+                <button class="add-to-cart">В кошик</button>
+            </div>
+    
+            <div class="sides-card">
+                <img src="images/sauce-40g-bbq.avif" alt="Соус Барбекю">
+                <h2>Соус Барбекю</h2>
+                <p>Ароматний соус для страв.</p>
+                <p class="price">27.00 грн</p>
+                <button class="add-to-cart">В кошик</button>
+            </div>
+    
+            <div class="sides-card">
+                <img src="images/placeholder.png" alt="Гострі курячі крильця">
+                <h2>Гострі курячі крильця</h2>
+                <p>Крильця в гострому соусі.</p>
+                <p class="price">215.00 грн</p>
+                <button class="add-to-cart">В кошик</button>
+            </div>
+    
+            <div class="sides-card">
+                <img src="images/placeholder.png" alt="Цибулеві кільця">
+                <h2>Цибулеві кільця</h2>
+                <p>Смажені кільця цибулі.</p>
+                <p class="price">85.00 грн</p>
+                <button class="add-to-cart">В кошик</button>
+            </div>
+        </div>
+    </main>
+    
+    
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Domino's Pizza</h3>
+                <p>Всі права захищені</p>
+            </div>
+            <div class="footer-links">
+                <h3>Новини</h3>
+                <a href="#">Кар'єра</a>
+                <a href="#">Франчайзинг</a>
+            </div>
+            <div class="footer-services">
+                <h3>Сервіс</h3>
+                <a href="pizza-tracker.html">Pizza Tracker</a>
+                <a href="#">Конструктор піци</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Корисна інформація</h3>
+                <p>0487021111</p>
+                <p>Без вихідних з 09:00 до 22:30</p>
+                <p><a href="mailto:info@dominos.uooo">info@dominos.uo</a></p> 
+            </div>
+        </div>
+    </footer>   
+    <script src="/js/sides.js"></script>
+
+</body>
+</html>

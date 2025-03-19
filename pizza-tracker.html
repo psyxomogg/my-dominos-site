@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="/css/pizza-tracker.css"> 
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon"> 
+    <title>Domino’s</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="contact-info">
+                <span>📞 0487021111</span>
+                <span>📍 Одеса</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="news.html">НОВИНИ</a>
+                <a href="pizza-tracker.html">PIZZA TRACKER</a>
+                <a href="feedback.html">ЗАЛИШИТИ ВІДГУК</a>
+            </nav>
+            <div class="user-options">
+                <a href="modal.html" class="login-btn">Увійти</a> 
+            </div>
+        </div>
+        <div class="header-bottom">
+            <img src="images/blue-logo.avif" alt="Domino's Logo" class="logo">
+            <nav class="main-menu">
+                <a href="promo.html">Акції</a>
+                <a href="pizza.html">Піца</a>
+                <a href="drinks.html">Напої</a>
+                <a href="sides.html">Сайди</a>
+                <a href="desserts.html">Десерти</a>
+            </nav>
+            <button class="order-btn">Замовити</button>
+        </div>
+    </header> 
+
+    <main class="tracker-container">
+        <h1>Номер замовлення</h1>
+        <div class="progress-circle">
+            <span id="time-left">20</span>
+            <p>Хвилин</p>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-step active">В процесі</div>
+            <div class="progress-step">Makeline</div>
+            <div class="progress-step">Випікається</div>
+            <div class="progress-step">Готово</div>
+            <div class="progress-step">Доставка</div>
+        </div>
+
+        <p class="order-status">Ваше замовлення було підтверджено</p>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Domino's Pizza</h3>
+                <p>Всі права захищені</p>
+            </div>
+            <div class="footer-links">
+                <h3>Новини</h3>
+                <a href="#">Кар'єра</a>
+                <a href="#">Франчайзинг</a>
+            </div>
+            <div class="footer-services">
+                <h3>Сервіс</h3>
+                <a href="pizza-tracker.html">Pizza Tracker</a>
+                <a href="#">Конструктор піци</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Корисна інформація</h3>
+                <p>0487021111</p>
+                <p>Без вихідних з 09:00 до 22:30</p>
+                <p><a href="mailto:info@dominos.uooo">info@dominos.uo</a></p> 
+            </div>
+        </div>
+    </footer>   
+    <script src="/js/pizza-tracker.js"></script> 
+
+</body>
+</html>
