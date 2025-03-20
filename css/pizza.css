@@ -1,5 +1,4 @@
-/* Общие стили для страницы пиццы */
-/* Контейнер для всех пицц */
+
 .pizza-menu {
     max-width: 1200px;
     margin: auto;
@@ -7,7 +6,6 @@
     text-align: center;
 }
 
-/* Грид для расположения карточек */
 .pizza-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -15,7 +13,6 @@
     justify-content: center;
 }
 
-/* Карточка пиццы */
 .pizza-item {
     background: white;
     border-radius: 15px;
@@ -43,20 +40,17 @@
     transform: scale(1.05);
 }
 
-/* Название пиццы */
 .pizza-item h3 {
     margin: 12px 0;
     font-size: 20px;
     font-weight: bold;
 }
 
-/* Описание пиццы */
 .pizza-item p {
     font-size: 14px;
     color: #666;
 }
 
-/* Блок выбора размера */
 .size-options {
     display: flex;
     justify-content: center;
@@ -89,7 +83,6 @@
     margin: 10px 0;
 }
 
-/* Кнопка в корзину */
 .add-to-cart {
     background: #D30000;
     color: white;
@@ -108,7 +101,6 @@
     transform: scale(1.05);
 }
 
-/* Адаптивность */
 @media screen and (max-width: 1024px) {
     .pizza-list {
         grid-template-columns: repeat(2, minmax(250px, 1fr));
