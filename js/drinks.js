@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded"), function () {
     const drinksGrid = document.querySelector(".drinks-grid");
 
     const drinksData = [
-        { category: "water", name: "Мінеральна вода", price: "30 грн", img: "/my-dominos-site/images/ng-min.avif" },
-        { category: "juice", name: "Апельсиновий сік", price: "50 грн", img: "/my-dominos-site/images/ekzotyk-1l.avif" },
-        { category: "tea", name: "Зелений чай", price: "40 грн", img: "/my-dominos-site/images/fuze-tea.webp" }
+        { category: "water", name: "Мінеральна вода", price: "30 грн", img:"/images/ng-min.avif" },
+        { category: "juice", name: "Апельсиновий сік", price: "50 грн", img:"/images/ekzotyk-1l.avif" },
+        { category: "tea", name: "Зелений чай", price: "40 грн", img:"/images/fuze-tea.webp" }
     ];
     function renderDrinks(category) {
         drinksGrid.innerHTML = "";
